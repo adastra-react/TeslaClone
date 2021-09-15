@@ -2,23 +2,19 @@ import React from 'react'
 import { View, Text, Pressable } from 'react-native'
 import styles from './styles';
 
-export default function StyledButton({ type }) {
-
-    const StyleType = type;
+export default function StyledButton({ type, content, onPress }) {
    
-    const backgorundColor = StyleType === 'primary' ? 'black' : 'white';
+    const backgorundColor = type === 'primary' ? '#171A20CC' : '#FFFFFFA6';
 
-    const textColor = StyleType === 'primary' ? 'white' : 'black'
+    const textColor = type === 'primary' ? '#FFFFFFA6' : '#171A20CC'
 
     return (
         <View style={styles.container}>
             <Pressable
              style={[styles.button, {backgroundColor: backgorundColor}]}
-             onPress={() => {
-                 console.warn('Hey')
-             }}
+             onPress={onPress}
             >
-                <Text style={[styles.text, {color: textColor}]} >Custom Order</Text>
+                <Text style={[styles.text, {color: textColor}]} >{content}</Text>
             </Pressable>
         </View>
     )
