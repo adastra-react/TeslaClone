@@ -7,11 +7,16 @@ const styles = StyleSheet.create({
     },
 
     button: {
-        
+        height: 40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 20
     },
 
     text: {
-
+        fontSize: 12,
+        fontWeight: '500',
+        textTransform: 'uppercase'
     }
 })
 
