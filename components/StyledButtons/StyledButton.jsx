@@ -2,13 +2,13 @@ import React from 'react'
 import { View, Text, Pressable } from 'react-native'
 import styles from './styles';
 
-export default function StyledButton(props) {
+export default function StyledButton({ type }) {
 
-    const type = props.type;
+    const StyleType = type;
    
-    const backgorundColor = type === 'primary' ? 'black' : 'white';
+    const backgorundColor = StyleType === 'primary' ? 'black' : 'white';
 
-    const textColor = type === 'primary' ? 'white' : 'black'
+    const textColor = StyleType === 'primary' ? 'white' : 'black'
 
     return (
         <View style={styles.container}>

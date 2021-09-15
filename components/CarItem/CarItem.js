@@ -14,10 +14,10 @@ const CarItem = (props) => {
         
             <View style={styles.titles}>
                <Text style={styles.title} >Model X</Text>
-               <Text style={styles.subTitle} >Starting at $69,000</Text>
+               <Text style={styles.subTitle} >Starting at $70,000</Text>
             </View>
 
-            <StyledButton type="secondary" />
+            <StyledButton type="primary" />
         </View>
     )
 }
