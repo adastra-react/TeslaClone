@@ -6,6 +6,12 @@ const styles = StyleSheet.create({
       width: '100%',
       alignItems: 'center'
     },
+
+    buttonContainer: {
+      position: "absolute",
+      bottom: 50,
+      width: '100%'
+    },
   
     image: {
       height: '100%',
